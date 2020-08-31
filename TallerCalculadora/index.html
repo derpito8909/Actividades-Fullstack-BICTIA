@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <title>taller calculadora</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="titulo">LA CALCULADORA</h1>
+        <div class="container">
+            <div class="container-resultado">
+                <span class="texto-resultado" id="resultado"></span>
+            </div>
+
+            <div class="container-inputs">
+                <input class="numero-inputs" type="number" id="inputNumber1" autofocus placeholder="Numero1">
+                <input class="numero-inputs" type="number" id="inputNumber2" placeholder="Numero2">
+            </div>
+            <div class=" container-bnt-operadores ">
+                <button class="bnt-operador " onclick="obtenerOperacion( '+') ">+</button>
+                <button class="bnt-operador " onclick="obtenerOperacion( '-') ">-</button>
+                <button class="bnt-operador " onclick="obtenerOperacion( '*') ">*</button>
+                <button class="bnt-operador " onclick="obtenerOperacion( '/') ">/</button>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/script.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "PremierSans-Regular";
+  src: url(../Fuentes/PremierLeagueW01-BoldItalic.woff2) format("woff2");
+}
+
+body {
+  background: #ff2882;
+  background: -moz-linear-gradient(left, #ff2882 0%, #b037e0 100%);
+  background: -webkit-linear-gradient(left, #ff2882 0%, #b037e0 100%);
+  background: linear-gradient(to right, #ff2882 0%, #b037e0 100%);
+  margin: 0px;
+  padding: 0px;
+  font-family: "PremierSans-Regular", Helvetica, sans-serif;
+}
+
+.title {
+  color: white;
+  font-size: 35px;
+}
+
+.imagen-centrada {
+  text-align: center;
+}
+
+.navbar-lista-equipos {
+  background-color: steelblue;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.navbar-lista-equipos ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar-lista-equipos img {
+  text-decoration: none;
+  width: 56px;
+  padding: 0.5em;
+  display: block;
+}
+
+.navbar-lista-equipos img:hover {
+  width: 66px;
+}
+
+.navbar {
+  background-color: #37003c;
+  color: white;
+  font-size: 22px;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+
+  padding: 1em;
+  display: block;
+}
+
+.imagen-flotante-izquierda {
+  float: left;
+  width: 300px;
+}
+
+.imagen-flotante-derecha {
+  float: right;
+  width: 300px;
+}
+
+.formato-texto {
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.social {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.social a {
+  display: block;
+}
+
+.social img {
+  width: 40px;
+}
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
+  padding: 1em;
+  align-items: center;
+}
+
+.elemento-grid {
+  border: 1px solid;
+  border-radius: 1em;
+}
+
+.elemento-grid-imagen {
+  overflow: hidden;
+}
+
+.elemento-grid-imagen img {
+  display: block;
+  width: 100%;
+}
+
+.galeria-imagenes {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.galeria-imagenes:hover {
+  color: rgb(58, 58, 58);
+  opacity: 0.8;
+}
+
+.div-tablas {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.estilo-tabla {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #1c6ea4;
+  background-color: #eeeeee;
+  text-align: center;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+table.estilo-tabla td,
+table.estilo-tabla th {
+  border: 1px solid #aaaaaa;
+  padding: 3px 2px;
+}
+
+table.estilo-tabla tbody td {
+  font-size: 20px;
+}
+
+table.estilo-tabla tr:nth-child(even) {
+  background: #d0e4f5;
+}
+
+table.estilo-tabla thead {
+  background: #1c6ea4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1c6ea4 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #5592bb 0%,
+    #327cad 66%,
+    #1c6ea4 100%
+  );
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1c6ea4 100%);
+  border-bottom: 2px solid #444444;
+}
+
+table.estilo-tabla caption {
+  color: white;
+  font-weight: bold;
+  font-family: "Fredoka One", cursive;
+  font-size: 30px;
+}
+
+table.estilo-tabla thead th {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  border-left: 2px solid #d0e4f5;
+}
+
+table.estilo-tabla tr:hover {
+  font-weight: 900;
+  background-color: #ffc758;
+}
+.campo {
+  display: inline-flex;
+}
+.img-cancha {
+  height: 100%;
+  width: 52%;
+}
+.balon {
+  text-align: end;
+  position: absolute;
+  right: 10px;
+  bottom: 310px;
+}
+.img-balon {
+  height: 80%;
+  width: 80%;
+}
+.text-shadow {
+  color: #ffffff;
+  text-shadow: -5px 5px 0px #00e6e6, -10px 10px 0px #01cccc,
+    -15px 15px 0px #00bdbd;
+  color: #ffffff;
+  font-size: 5em;
+  text-align: center;
+  position: absolute;
+  right: 580px;
+  bottom: 375px;
+  opacity: 0;
+}
+.img-var {
+  width: 25%;
+  position: absolute;
+  right: 580px;
+  bottom: 312px;
+  opacity: 0;
+}
+.img-sad {
+  width: 89px;
+  position: absolute;
+  right: 450px;
+  bottom: 360px;
+  opacity: 0;
+}
+.img-happy {
+  width: 89px;
+  position: absolute;
+  right: 450px;
+  bottom: 360px;
+  opacity: 0;
+}
+.main-footer {
+  position: relative;
+  top: 277px;
+  text-align: center;
+  width: 100%;
+  background-color: #37003c;
+  font-size: 20px;
+  color: white;
+  min-height: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

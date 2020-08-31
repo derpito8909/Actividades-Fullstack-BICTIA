@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  display: block;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #1b2cc1;
+  color: #ffffff;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+nav li {
+  margin: 10px;
+}
+.minibarra {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #091540;
+  color: #ffffff;
+}
+.redes {
+  display: flex;
+  justify-content: flex-end;
+}
+.redes a {
+  color: inherit;
+  text-decoration: none;
+}
+.redes ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+.redes li {
+  margin: 10px;
+}
+
+.galeria {
+  height: 850px;
+  display: block;
+  margin: 0px 80px;
+}
+
+.parrafo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: rgb(97, 97, 97);
+  background-color: rgba(218, 213, 213, 0.836);
+  padding: 30px;
+}
+
+.galeria-animales {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.animal {
+  margin: 10px;
+}
+
+.animal img {
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+}
+/* estilos de la primera parte del body */
+.imagen-banner {
+  width: 89%;
+  height: 300px;
+  margin: 5px 80px;
+}
+.titulo {
+  text-align: center;
+  color: rgb(11, 11, 182);
+}
+.bloque-texto1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  padding-right: 30px;
+  text-align: justify;
+  background-color: rgba(218, 213, 213, 0.836);
+  color: rgb(97, 97, 97);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.imagen-texto {
+  width: 300px;
+  margin-left: 20px;
+}
+.div-seccion1 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 80px;
+}
+.box-footer {
+  display: flex;
+}
+
+.box {
+  padding: 1em;
+  margin: 0em;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 2em;
+  height: 80px;
+  width: 70px;
+  text-align: center;
+}
+
+.banner-footer {
+  width: 100%;
+  height: 200px;
+}
+
+footer {
+  background-color: rgba(3, 3, 107, 0.945);
+  border-radius: 10px;
+}
+
+.list {
+  padding-right: 10em;
+}
+
+.list > li {
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: x-large;
+  color: white;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+iframe {
+  height: 200px;
+  border-radius: 10px;
+}

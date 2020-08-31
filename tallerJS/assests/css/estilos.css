@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(148, 187, 223);
+}
+
+.container-general {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.container-imagen {
+    text-align: center;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+}
+
+.imagen-cantante {
+    border-radius: 40%;
+    width: 200px;
+}
