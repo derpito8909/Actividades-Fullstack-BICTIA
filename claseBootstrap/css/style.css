@@ -1,0 +1,43 @@
+.header {
+    background-color: cadetblue;
+    height: 100px;
+}
+
+.navegador {
+    background-color: #13FBE0;
+    color: #FB9313;
+}
+
+.botoncito {
+    background-color: chocolate;
+    margin: 16px;
+    color: black;
+}
+
+.principal {
+    background-color: rgb(255, 145, 0);
+    height: 350px;
+}
+
+.adicional {
+    background-color: #fb2313;
+    height: 150px;
+}
+
+.adicional-1 {
+    background-color: chartreuse;
+    height: 350px;
+}
+
+.final {
+    background-color: rgb(30, 108, 210);
+    height: 110px;
+}
+
+.widget {
+    background-color: chocolate;
+    height: 100px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
