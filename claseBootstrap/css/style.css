@@ -41,3 +41,20 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.contorno {
+    border: 2px rgb(175, 172, 172) solid;
+    background-color: rgb(238, 215, 172);
+    width: 20%;
+    height: 300px;
+    margin: 10px 35px;
+}
+
+.numero1 {
+    border-radius: 50%;
+    background-color: rgb(19, 13, 10);
+    width: 10%;
+    height: 10px;
+    padding: 1rem;
+    margin: 1rem;
+}
