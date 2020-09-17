@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/src/css/estilo.css">
+        <title>javascript</title>
+    </head>
+
+    <body>
+        <header class="cabecera">
+
+        </header>
+        <main>
+            <section>
+                <h1 class="titulo">Iniciar sesion</h1>
+                <form id="formulario" class="formulario" onsubmit="validar(event)">
+                    <div class="container-input">
+                        <label for="">Nombre</label>
+                        <input type="text" id="nombre">
+                        <label for="">Apellido</label>
+                        <input type="text" id="apellido">
+                        <label for="">Contraseña</label>
+                        <input type="password" id="pass">
+                        <label for="">Email</label>
+                        <input type="email" id="mail" placeholder="example@example.com">
+                        <div class="container-input checkdatos">
+                            <input type="checkbox" id="checkDatos">
+                            <label for="checkdatos">Acepta los terminos y condiciones</label>
+                        </div>
+                    </div>
+                    <input class="btn-summit" type="submit" value="Enviar">
+                </form>
+                <small id="mensajeError" class="texto-error"></small>
+            </section>
+        </main>
+        <script src="./assets/src/js/script.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+
+</html>
