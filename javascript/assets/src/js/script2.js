@@ -1,5 +1,11 @@
 let nombre = document.getElementById('name');
-let apellido = document.getElementById('surname');
-let email = document.getElementById('mail');
+let edad = document.getElementById('age');
+let ciudad = document.getElementById('city');
+let cancion = document.getElementById('song');
 
-let userData = JSON.parse(localStorage.getItem(datos));
+let userData = JSON.parse(localStorage.getItem('datosUsuario'));
+
+nombre.textContent = userData.name;
+edad.textContent = userData.age;
+ciudad.textContent = userData.city;
+cancion.textContent = userData.cancion;

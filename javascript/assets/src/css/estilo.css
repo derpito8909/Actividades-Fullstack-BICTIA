@@ -36,6 +36,11 @@
     font-weight: 700;
 }
 
+.close {
+    border: 1px white solid;
+
+}
+
 
 
 .titulo {

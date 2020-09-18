@@ -4,41 +4,25 @@ const formulario = document.getElementById('formulario');
 function validar(e) {
     // funcion para prevenir que se envien los datos sin validar
     e.preventDefault();
-    const emailValidation = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    let inputName = formulario['nombre']
-    let inputSurname = document.getElementById("apellido");
-    let inputPass = document.getElementById("pass");
-    let inputEmail = document.getElementById("mail");
-    let inputCheckDatos = document.getElementById("checkDatos");
+    let name = formulario['nombre'].value;
+    let age = formulario['edad'].value;
+    let city = formulario['ciudad'].value;
+    let cancion = formulario['cancion'].value;
     //condiciones para la validacion de los datos
-    if (inputName.value == "" || inputSurname.value == "" || inputPass.value == "" || inputEmail.value == "") {
+    if (name == "" || age == "" || city == "" || cancion == "") {
         swal("No se puede dejar campos vacios", {
-            className: "swal-text",
-            icon: "warning",
-        });
-    } else if (!emailValidation.test(inputEmail.value)) {
-        swal("Formato de email incorrecto", {
-            className: "swal-text",
-            icon: "warning",
-        });
-    } else if (inputCheckDatos.checked == false) {
-        swal("Debes aceptar los terminos y condiciones antes de continuar", {
             className: "swal-text",
             icon: "warning",
         });
     } else {
         let datos = {
-            inputName,
-            inputSurname,
-            inputEmail,
-        };
+            name,
+            age,
+            city,
+            cancion,
+        }
         localStorage.setItem("datosUsuario", JSON.stringify(datos));
-        swal("Registro exitoso", {
-            className: "swal-text",
-            icon: "success",
-        });
-        setTimeout(() => {
-            window.location = '../../index.html'
-        });
+        window.location = 'assets/src/pages/user.html';
+
     }
 }
