@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    font-family: fantasy;
+
+}
+
+.color-text {
+    color: white !important;
+}
+
+.cabecera {
+    background-color: #37003c;
+    height: 100px;
+    color: white;
+    margin-bottom: 25px;
+
+}
+
+
+.logo {
+    background: url(../images/pl-logo-sprite.png) no-repeat;
+    width: 95px;
+    height: 40px;
+    background-position: -196px -205px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.titulo {
+    background-color: #e90052;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    color: white;
+
+}
+
+.formulario {
+    width: 20%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.container-input label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #242424;
+}
+
+.container-input input {
+    padding: 10px 15px;
+    background: #e8f0fe;
+    border: none;
+    border-bottom: 1px solid #76766f;
+
+}
+
+.container-input input:focus {
+    border: 2px black solid;
+}
+
+.btn-summit {
+    width: 100px;
+    height: 50px;
+    font-size: 1em;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 10px;
+    background-color: #37003c;
+    color: white;
+}
+
+.div-tablas {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.estilo-tabla {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border: 1px solid #37003c;
+    background-color: #eeeeee;
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+table.estilo-tabla td,
+table.estilo-tabla th {
+    border: 1px solid #aaaaaa;
+    padding: 3px 2px;
+}
+
+table.estilo-tabla tbody td {
+    font-size: 20px;
+}
+
+table.estilo-tabla tr:nth-child(even) {
+    background: #d0e4f5;
+}
+
+table.estilo-tabla thead {
+    background: #37003c;
+    background: -moz-linear-gradient(top, #c573cc 0%, #6e0d77 66%, #37003c 100%);
+    background: -webkit-linear-gradient(top,
+            #c573cc 0%,
+            #6e0d77 66%,
+            #37003c 100%);
+    background: linear-gradient(to bottom, #c573cc 0%, #6e0d77 66%, #37003c 100%);
+    border-bottom: 2px solid #444444;
+}
+
+table.estilo-tabla caption {
+    color: white;
+    font-weight: bold;
+    font-family: "Fredoka One", cursive;
+    font-size: 30px;
+}
+
+table.estilo-tabla thead th {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    border-left: 2px solid #d0e4f5;
+}
+
+table.estilo-tabla tr:hover {
+    font-weight: 900;
+    border-bottom: 5px white solid;
+}
+
+
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #008000;
+    font-size: 12px;
+    border: 1px solid #3e549a;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.swal-text {
+    background-color: aliceblue;
+    padding: 17px;
+    border: 1px solid #F0E1A1;
+    margin: 22px;
+    text-align: center;
+    color: #61534e;
+    font-size: 20px;
+}

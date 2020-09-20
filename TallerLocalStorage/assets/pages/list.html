@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <title>Actividad LocalStorage</title>
+    </head>
+
+    <body>
+        <header class="cabecera">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <a class="navbar-brand" href="#">
+                    <i class="logo"></i></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarCollapse">
+                    <ul class=" navbar-nav ml-auto list-unstyled">
+                        <li class="navbar-item mx-3 border rounded border-white text-center ">
+                            <a class="nav-link font-text color-text " href="../../index.html">Home</a>
+                        </li>
+                        <li class="navbar-item mx-3 border rounded border-white text-center">
+                            <a class="nav-link font-text color-text" href="#">List of Teams</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="container mt-5">
+            <h1 class="titulo">List of England's club teams</h1>
+            <div class="row">
+                <div class="col text-center">
+                    <table class="estilo-tabla">
+                        <caption class="estilo-tabla">Tables</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Team</th>
+                                <th scope="col">Location</th>
+                                <th scope="col">Stadium</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableTeam">
+
+                        </tbody>
+                    </table>
+                    <button class="btn-summit" onclick="clean(Event)">Clean</button>
+                </div>
+            </div>
+        </main>
+        <script src=" ../js/jquery-3.5.1.min.js"> </script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/listStorage.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+
+</html>

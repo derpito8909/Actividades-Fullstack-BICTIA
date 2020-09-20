@@ -4,28 +4,55 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Taller Local Storage</title>
+        <link rel="stylesheet" href="./assets/css/estilo.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <title>Actividad LocalStorage</title>
     </head>
 
     <body>
-        <div class="container">
-            <header>
-                <img src="./assets/images/premier-league-logo.svg" alt="logo-premier">
-                <nav>
-                    <ul>
-                        <li><a href="#">item1</a></li>
-                        <li><a href="#">item2</a></li>
-                        <li><a href="#">item3</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <h1>Mi Pagina</h1>
-                <img src="./assets/images/premier-league-logo.svg" alt="estadio">
-
-            </main>
+        <header class="cabecera">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <a class="navbar-brand" href="#">
+                    <i class="logo"></i></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarCollapse">
+                    <ul class=" navbar-nav ml-auto list-unstyled">
+                        <li class="navbar-item mx-3 border rounded border-white text-center ">
+                            <a class="nav-link font-text color-text " href="#">Home</a>
+                        </li>
+                        <li class="navbar-item mx-3 border rounded border-white text-center">
+                            <a class="nav-link font-text color-text" href="./assets/pages/list.html">List of Teams</a>
+                        </li>
+            </ul>
         </div>
-
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1 class="titulo">Register England's club teams</h1>
+                <form id="formulario" class="formulario"">
+                    <div class=" container-input">
+                    <label for="">Team</label>
+                    <input type="text" id="team">
+                    <label for="">Location</label>
+                    <input type="text" id="location">
+                    <label for="">Stadium</label>
+                    <input type="text" id="stadium">
+                    </div>
+                    <input class="btn-summit" type="submit" value="Enviar">
+                </form>
+                <small id="mensajeError" class="texto-error"></small>
+            </section>
+        </main>
+        <script src="./assets/js/jquery-3.5.1.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/formStorage.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </body>
 
 </html>
