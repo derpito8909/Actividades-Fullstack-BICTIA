@@ -4,6 +4,7 @@ const formulario = document.getElementById('formulario');
 function validar(e) {
     // funcion para prevenir que se envien los datos sin validar
     e.preventDefault();
+
     let name = formulario['nombre'].value;
     let age = formulario['edad'].value;
     let city = formulario['ciudad'].value;

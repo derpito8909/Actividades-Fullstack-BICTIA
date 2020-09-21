@@ -1,0 +1,220 @@
+/* estilos generales */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: fantasy;
+
+}
+
+/* estilos de formularios */
+.color-text {
+    color: #205E3B;
+    font-weight: bold;
+}
+
+.cabecera {
+    background-color: #206a5d;
+    color: #7FFFD4;
+}
+
+.color-icon {
+    background-color: #e6e5b0 !important;
+}
+
+.formulario {
+    background-color: #bfdcae !important;
+}
+
+.form-group input {
+    background: #f1f1e8;
+    border: none;
+}
+
+.form-group input:focus {
+    border: 2px black solid;
+}
+
+.btn-summit {
+    width: 150px;
+    height: 50px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 10px;
+    background-color: #81b214;
+    color: #113321;
+}
+
+/* estilos de la pagina TO-DO */
+.lista {
+    background-color: #206a5d;
+    height: 800px;
+}
+
+.tarea {
+    background-color: #bfdcae;
+    height: 800px;
+
+}
+
+.color-bienvenido {
+    color: #c9f227;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.color-usuario {
+    color: #F1F227;
+    font-size: 34px;
+}
+
+.input-lista {
+    background: #f1f1e8;
+    border: none;
+}
+
+.ol {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* estilos de para agregar tareas */
+/* estilos teclado virtual */
+.text-teclado {
+    border: 2px white solid;
+    background-color: #f1f1e8;
+    width: 450px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.contenedor-letras-teclado {
+    background-color: #bfdcae;
+    border: 1px #413636 solid;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: -1px 2px 11px 2px rgba(0, 0, 0, 0.92);
+    padding: 15px;
+    margin: auto;
+
+}
+
+.letra {
+    width: 50px;
+    height: 30px;
+    background-color: #81b214;
+    color: #113321;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 9px 15px 4px #515151;
+}
+
+.letra-espacio {
+    width: 105px;
+    background-color: #81b214;
+    color: #113321;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 9px 15px 4px #515151;
+}
+
+.letra:hover {
+    background-color: #9fce3a;
+}
+
+/* estilos para tablas */
+.div-tablas {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.estilo-tabla {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border: 1px solid #37003c;
+    background-color: #eeeeee;
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+table.estilo-tabla td,
+table.estilo-tabla th {
+    border: 1px solid #aaaaaa;
+    padding: 3px 2px;
+}
+
+table.estilo-tabla tbody td {
+    font-size: 20px;
+}
+
+table.estilo-tabla tr:nth-child(even) {
+    background: #d0e4f5;
+}
+
+table.estilo-tabla thead {
+    background: #37003c;
+    background: -moz-linear-gradient(top, #c573cc 0%, #6e0d77 66%, #37003c 100%);
+    background: -webkit-linear-gradient(top,
+            #c573cc 0%,
+            #6e0d77 66%,
+            #37003c 100%);
+    background: linear-gradient(to bottom, #c573cc 0%, #6e0d77 66%, #37003c 100%);
+    border-bottom: 2px solid #444444;
+}
+
+table.estilo-tabla caption {
+    color: white;
+    font-weight: bold;
+    font-family: "Fredoka One", cursive;
+    font-size: 30px;
+}
+
+table.estilo-tabla thead th {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    border-left: 2px solid #d0e4f5;
+}
+
+table.estilo-tabla tr:hover {
+    font-weight: 900;
+    border-bottom: 5px white solid;
+}
+
+/* estilos para mensaje de alerta */
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #008000;
+    font-size: 12px;
+    border: 1px solid #3e549a;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.swal-text {
+    background-color: aliceblue;
+    padding: 17px;
+    border: 1px solid #F0E1A1;
+    margin: 22px;
+    text-align: center;
+    color: #61534e;
+    font-size: 20px;
+}
