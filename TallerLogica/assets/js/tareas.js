@@ -1,5 +1,5 @@
 /*  Este script se encarga de capturar las tareas escritas por el teclado virtual y tambien lista escritas en un input, guardarlas en el local storage y mostarlas en una lista en la pagina*/
-
+window.addEventListener()
 //se obtiene el nombre de usuario registrado en el localstorage y se muestra en la pagina
 const nombreUsuario = document.getElementById('nombreUsuario');
 const userInStorage = JSON.parse(localStorage.getItem('userRegisted'));

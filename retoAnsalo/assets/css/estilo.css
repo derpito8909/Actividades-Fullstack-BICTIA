@@ -1,0 +1,113 @@
+/* estilos generales */
+
+@font-face {
+    font-family: "Press Start 2P";
+    src: url(../fonts/PressStart2P-vaV7.ttf)
+}
+
+body {
+    font-family: fantasy;
+    background-color: #d3d0d0;
+}
+
+/* estilos de los temas */
+
+.dark {
+    background-color: #413636;
+    color: aliceblue;
+}
+
+.container.dark p {
+    color: #413636;
+}
+
+.container.dark .contenedor-letras-teclado {
+    background-color: #413636;
+
+
+}
+
+.retro {
+    background: rgb(44, 56, 87);
+    background: linear-gradient(90deg, rgba(44, 56, 87, 1) 33%, rgba(57, 92, 170, 1) 66%);
+    color: rgb(248, 128, 31);
+    font-family: 'Press Start 2P', cursive;
+    font-size: small;
+}
+
+.container.retro .contenedor-letras-teclado {
+    background: rgb(44, 56, 87);
+    background: linear-gradient(90deg, rgba(44, 56, 87, 1) 33%, rgba(57, 92, 170, 1) 66%);
+    width: 29%;
+}
+
+.container.retro .letra {
+    background: rgb(249, 237, 52);
+    background: linear-gradient(90deg, rgba(249, 237, 52, 1) 15%, rgba(236, 146, 56, 1) 43%, rgba(170, 55, 42, 1) 72%);
+}
+
+/* estilos de para agregar tareas */
+/* estilos teclado virtual */
+.text-teclado {
+    border: 2px white solid;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    width: 450px;
+    height: 50px;
+    margin-bottom: 10px;
+
+}
+
+.container-teclado {
+    width: 100%;
+}
+
+.contenedor-letras-teclado {
+    background-color: #d9ddd6;
+    border: 1px #413636 solid;
+    border-radius: 5px;
+    width: 27%;
+    box-shadow: -1px 2px 11px 2px rgba(0, 0, 0, 0.92);
+    padding: 15px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.letra {
+    width: 82px;
+    height: 30px;
+    background-color: #c7c7c7;
+    color: #202221;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 6px;
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 9px 15px 4px #515151;
+}
+
+.letra:hover {
+    background-color: #e6e6e6;
+}
+
+/* estilos para mensaje de alerta */
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #008000;
+    font-size: 12px;
+    border: 1px solid #3e549a;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.swal-text {
+    background-color: aliceblue;
+    padding: 17px;
+    border: 1px solid #F0E1A1;
+    margin: 22px;
+    text-align: center;
+    color: #61534e;
+    font-size: 20px;
+}

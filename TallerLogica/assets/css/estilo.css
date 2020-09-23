@@ -76,6 +76,8 @@ body {
 .input-lista {
     background: #f1f1e8;
     border: none;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .ol {
@@ -84,13 +86,21 @@ body {
     margin-right: auto;
     margin-left: auto;
     font-weight: bolder;
-    text-align: center;
+    text-align: center;    
+}
+.ol li {
+    color: #802200;
+}
+
+.ol-lista li {
+    color: #F2A127;
 }
 
 /* estilos de para agregar tareas */
 /* estilos teclado virtual */
 .text-teclado {
     border: 2px white solid;
+    border-radius: 5px;
     background-color: #f1f1e8;
     width: 450px;
     height: 50px;
