@@ -1,0 +1,105 @@
+/* estilos generales */
+
+body {
+    font-family: fantasy;
+    background-color: #7e7b7b !important;
+
+}
+
+h1,
+h3 {
+    color: whitesmoke;
+}
+
+
+/* estilos de para agregar tareas */
+/* estilos teclado virtual */
+.text-teclado {
+    border: 2px #2b2b2b solid;
+    border-radius: 5px;
+    background-color: #373737;
+    color: whitesmoke;
+    width: 27%;
+    height: 82px;
+    text-align: right;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.container-teclado {
+    width: 100%;
+}
+
+.contenedor-letras-teclado {
+    background-color: #404040;
+    border: 1px #212121 solid;
+    border-radius: 5px;
+    width: 27%;
+    padding-left: 37px;
+    margin: auto;
+}
+
+.letras-teclado {
+    width: 50px;
+    height: 30px;
+    background-color: #4a4a4a;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 7px;
+    border: 1px #282828 solid;
+    border-radius: 5px;
+    box-shadow: 0px 9px 15px 4px #515151;
+}
+
+.letras-teclado:hover {
+    background-color: #525151;
+}
+
+.letras-teclado-resultado {
+    width: 84%;
+    height: 30px;
+    background-color: #4a4a4a;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 7px;
+    border: 1px #282828 solid;
+    border-radius: 5px;
+    box-shadow: 0px 9px 15px 4px #515151;
+}
+
+.letras-teclado-resultado:hover {
+    background-color: #525151;
+}
+
+/* estilos para el historial*/
+.ul {
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    list-style: none;
+}
+
+.ul li {
+    color: #2B0000;
+    font-size: 22px;
+}
+
+/* estilos para mensaje de alerta */
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #008000;
+    font-size: 12px;
+    border: 1px solid #3e549a;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.swal-text {
+    background-color: aliceblue;
+    padding: 17px;
+    border: 1px solid #F0E1A1;
+    margin: 22px;
+    text-align: center;
+    color: #61534e;
+    font-size: 20px;
+}
