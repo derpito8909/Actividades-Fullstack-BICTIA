@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Get Schwifty";
+    src: url(../fuente/get_schwifty.ttf)
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.header {
+    width: 100%;
+    z-index: 1;
+}
+
+.header-style {
+    font-family: 'Get Schwifty', cursive;
+    color: #b8e3fc;
+    background-color: #10412D;
+}
