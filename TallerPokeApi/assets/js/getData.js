@@ -1,34 +1,39 @@
 /* Este script se encarga de consumir la api de pokeAPI y pintar cada pokemon en cards */
 
 //url de la api
-const API = "https://pokeapi.co/api/v2/pokemon/";
+const API = "https://pokeapi.co/api/v2/pokemon/?limit=20&offset=00";
 
 //Obtener resultado del API
-const getData = (api) => {
+const getDataAPI = (api) => {
     return fetch(api)
         .then((response) => response.json())
         .then((json) => {
-            getDataPokemon(json.results)
+            getAllPokemons(json.results);
         })
         .catch((error) => {
             console.log("Error", error);
         })
 }
-//Obtener cada id de los poqkemones
-const getDataPokemon = (data) => {
-    for (const miniData of data) {
-        fetch(miniData.url)
-            .then((response) => response.json())
-            .then((json) => {
-                llenarDatos(json);
-            })
-            .catch((error) => {
-                console.log("error", error)
-            })
+const getAllPokemons = (data) => {
+    for (let i = 1; i < data.length; i++) {
+        getPokemon(i);        
     }
 }
-const llenarDatos = (data) => {
-    console.log(data)
+//Obtener cada id de los poqkemones
+const getPokemon = (id) => {
+    const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+    //console.log(data);
+    fetch(url)
+        .then((response) => response.json())
+        .then((json) => {
+            mostarPokemon(json)
+        })
+        .catch((error) => {
+            console.log("Error", error);
+        })
+}
+const mostarPokemon = (data) => {
+    console.log(data);
     let createElementHtml = "";
     createElementHtml += '<div class="col">';
     createElementHtml += '<div class="card" style="width:10rem;">';
@@ -42,21 +47,6 @@ const llenarDatos = (data) => {
     createElementHtml += '</div>';
     createElementHtml += '</div>';
     createElementHtml += '</div>';
-    // for (const dt in data) {
-    //     console.log(dt)
-    //     // createElementHtml += '<div class="col">';
-    //     // createElementHtml += '<div class="card" style="width:10rem;">';
-    //     // createElementHtml += `<img src="${dt.sprites.front_default}" class="card-img-top" alt="Card image cap">`;
-    //     // createElementHtml += '<div class="card-body">';
-    //     // createElementHtml += `<h5 class="card-title">${dt.name}</h5>`;
-    //     // createElementHtml += `<p class="card-text">Abilities: ${dt.abilities[0].ability.name}</p>`;
-    //     // createElementHtml += `<p class="card-text">Type: ${dt.types[0].type.name}</p>`;
-    //     // createElementHtml += `<p class="card-text">Height: ${dt.height}</p>`;
-    //     // createElementHtml += `<p class="card-text">Weight: ${dt.weight}</p>`;
-    //     // createElementHtml += '</div>';
-    //     // createElementHtml += '</div>';
-    //     // createElementHtml += '</div>';
-    // }
     document.getElementById('datosPersonajes').innerHTML = createElementHtml;
 }
 // Paginacion
@@ -71,4 +61,4 @@ const paginacion = (info) => {
     console.log(API);
 }
 //EjecutarData
-getData(API);
+getDataAPI(API);
